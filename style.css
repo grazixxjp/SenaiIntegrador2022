@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    width: 100%; 
+    height: 90%;
+    background-color: black;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 96%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 500px;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: 25px;
+    padding: 0 20px;
+    
+}
+#burguer > div{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+#burguer {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 999;
+}
+a{
+    text-decoration: none;
+}
+.video::before{
+    content: '';
+    width: 100vw;
+    height: 534px;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.video{
+    margin: 0 auto;
+    max-width: 905px;
+}
+#capa{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#capa img{
+    width: 100%;
+    height: inherit;
+}
+#produto1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+#produto2{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 15px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+@keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+.volaten1{
+    background: url('img/volaten1.jpeg') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+.volnate2{
+    background: url('img/volnate2.jpg') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+.volante3{
+    background: url('img/volante3.png') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+.volante4{
+    background: url('img/volante4.jpg') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+.volantee{
+    background: url('img/volantee.png') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+}
+#logo{
+    width: 50px;
+    height: 40px;
+    background-color: black;
+    margin: 10px 6px;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-image {
+    padding: 25px;
+    display: block;
+    display: flex;
+    width: auto
+
+}
+.hero-text{
+    margin: 0 20px 0 0px;
+}
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 500px) {
+    #burguer ul{
+        display: flex;
+        list-style: none;
+        min-width: 380px;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: 63px;
+}
+nav{
+        height: 120px;
+}
+.row1{
+    flex-direction: column;
+}    
+.hero-image {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+button{
+    display: block;
+    text-align: center;
+    width: 70%;
+    color: rgb(0, 0, 0,);
+    padding: 15px;
+    border-radius:35px;
+    margin: 15px auto;
+    background-color: white;
+}
+button:hover {
+	background: #bc0101;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+button a:link {
+    text-decoration: none;
+    color: inherit;
+}
+#produtos{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#produtos > div{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+}
+footer {
+    font-family: sans-serif;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+footer p{
+    font-size: 10px;
+    margin: 11px auto;
+}
+#figura{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+input[type=text] {
+    padding: 6px;
+    border: none;
+    display: flex;
+    border-radius: 20px;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.sob{
+    align-items: center;
+    flex-direction: column;
+    padding: 90px ;
+    font-size: 20px;
+
+}
+h6{
+    font-size: 30px ;
+
+}
+.container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #bc0101;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    height: 100%;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
